@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Merger</title>
+    <style>
+        .flex {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(178, 151, 151);
+        }
+
+        .flex>div {
+            /*div children of the flex container*/
+            background-color: #b2a6a6;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+            .flex {
+                flex-direction: column;
+                background-color: rgb(37, 103, 128);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Sowmya build merger</h2>
+    <div class="flex" id="target">
+        <div class="merger">row item 1</div>
+        <div class="merger">row item 2</div>
+        <div class="merger">row item 3</div>
+    </div>
+    <br>
+    <br>
+    <input type="text" id="txt" value="">
+
+    <p>Press the button to add elements in the end</p>
+    <button onclick="addEnd()">Add it end</button>
+    <p>Press the button to remove the element</p>
+    <button onclick="remove()">Remove</button>
+    <br>
+    <p>Press the button to add elements in the front</p>
+    <button onclick="addFront()">Add it front</button>
+   
+
+</body>
+<script>
+
+    function addEnd() {
+        text = document.getElementById("txt").value;
+        out = document.createElement("div");
+        out.innerHTML = text;
+        out.className = "merger";
+        flex = document.getElementById("target");
+        flex.appendChild(out);
+    }
+
+    function remove() {
+        mergerItems = document.getElementsByClassName("merger");
+        length = mergerItems.length;
+
+        if (length > 0) {
+            middleItem = Math.floor(length / 2);
+            mergerItems[middleItem].remove();
+        }
+    }
+
+    function addFront() {
+        text = document.getElementById("txt").value;
+        out = document.createElement("div");
+        out.innerHTML = text;
+        out.className = "merger";
+        flex = document.getElementById("target");
+        firstChild = flex.firstChild;
+        flex.insertBefore(out, firstChild);
+    }
+
+    // Merger Game
+
+    // Function to swap two elements in an array
+    function swapElements(array, indexA, indexB) {
+        const temp = array[indexA];
+        array[indexA] = array[indexB];
+        array[indexB] = temp;
+    }
+
+    // Function to randomly select two elements and swap their positions
+    function swapRandomElements() {
+        const indexA = getRandomNumber(0, elements.length - 1);
+        let indexB;
+        do {
+            indexB = getRandomNumber(0, elements.length - 1);
+        } while (indexA === indexB);
+
+        swapElements(elements, indexA, indexB);
+        // Update the UI or perform other necessary actions
+    }
+
+    
+
+</script>
+
+</html>
+
+
+
+
+
+
+

@@ -4,10 +4,11 @@
 <head>
     <title>Locations</title>
     <style>
-        .container{
-            display: flex;
-            flex-direction: row;
-        }
+       .container{
+        margin:0;
+        display:flex;
+        flex-direction:row;
+       }
         h1 {
             padding: 10px;
             background-color: aquamarine;
@@ -31,176 +32,192 @@
 </head>
 
 <body>
-    <h1>Find the treasure by Sowmya Kondepati</h1>
+    <h1>Find the treasure by kondepati sowmya</h1>
     <p class="alert alert-primary mainbtn" style="background-color:lavender;">Click on the locations to search for
         treasure, beware the traps</p>
     <p class="alert alert-primary mainbtn" style="background-color:lavenderblush;" id="locations">Number of locations
         checked is zero</p>
     <p class="alert alert-primary mainbtn" style="background-color:lavender;" id="penalty">Penalty is zero</p>
-    <p class="alert alert-primary mainbtn" style="background-color:lavenderblush;">Click for help</p>
-    <button id="clickHelp"><p onclick="help()">Click for help</p></button>
-            <p id="help">Help report</p>
-            <br>
+    <p class="alert alert-primary mainbtn" style="background-color:lavenderblush;" onClick="help()">Click for help</p>
     <p class="alert alert-primary mainbtn" style="background-color:lavender;" id="help">Help report</p>
-    <div class="container">
-        <div class="image-conatiner">
-            <div class="row">
-                <div class="col-2">
-                    <img src="location.jpg" alt="Location" onclick="check(1)" width="100px" height="100px" id="tre1">
+
+            <div class="container">
+                <div class="location">
+                    <img id="iid0" src="location.jpg" onclick="check(0)" alt="locimg" width="100px" height="100px">
                 </div>
-                <div class="col-2">
-                    <img src="location.jpg" alt="Location" onclick="check(2)" width="100px" height="100px" id="tre2">
+
+                <div class="location">
+                    <img id="iid1" src="location.jpg" onclick="check(1)" alt="locimg" width="100px" height="100px">
                 </div>
-                <div class="col-2">
-                    <img src="location.jpg" alt="Location" onclick="check(3)" width="100px" height="100px" id="tre3">
+
+                <div class="location">
+                    <img id="iid2" src="location.jpg" onclick="check(2)" alt="locimg" width="100px" height="100px">
                 </div>
-                <div class="col-2">
-                    <img src="location.jpg" alt="Location"onclick="check(4)" width="100px" height="100px" id="tre4">
+
+                <div class="location">
+                    <img id="iid3" src="location.jpg" onclick="check(3)" alt="locimg" width="100px" height="100px">
                 </div>
-                <div class="col-2">
-                    <img src="location.jpg" alt="Location"onclick="check(5)" width="100px" height="100px" id="tre5">
+
+                <div class="location">
+                    <img id="iid4" src="location.jpg" onclick="check(4)" alt="locimg" width="100px" height="100px">
                 </div>
             </div>
-    <div class="row">
-        <div class="col-2">
-            <img src="location.jpg" alt="Location"onclick="check(6)" width="100px" height="100px" id="tre6">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location"onclick="check(7)" width="100px" height="100px" id="tre7">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location"onclick="check(8)" width="100px" height="100px" id="tre8">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location"onclick="check(9)" width="100px" height="100px" id="tre9">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location"onclick="check(10)" width="100px" height="100px" id="tre10">
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-2">
-            <img src="location.jpg" alt="Location" onclick="check(11)"width="100px" height="100px" id="tre11">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location" onclick="check(12)"width="100px" height="100px" id="tre12">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location" onclick="check(13)"width="100px" height="100px" id="tre13">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location" onclick="check(14)"width="100px" height="100px" id="tre14">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location" onclick="check(15)"width="100px" height="100px" id="tre15" >
-        </div>
-    </div>
+            <div class="container">
+                <div class="location">
+                    <img id="iid5" src="location.jpg" onclick="check(5)" alt="locimg" width="100px" height="100px">
+                </div>
 
-    <div class="row">
-        <div class="col-2">
-            <img src="location.jpg" alt="Location" onclick="check(16)"width="100px" height="100px" id="tre16">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location"onclick="check(17)" width="100px" height="100px" id="tre17">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location" onclick="check(18)"width="100px" height="100px" id="tre18">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location"onclick="check(19)" width="100px" height="100px" id="tre19">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location"onclick="check(20)" width="100px" height="100px" id="tre20">
-        </div>
-    </div>
+                <div class="location">
+                    <img id="iid6" src="location.jpg" onclick="check(6)" alt="locimg" width="100px" height="100px">
+                </div>
 
-    <div class="row">
-        <div class="col-2">
-            <img src="location.jpg" alt="Location"onclick="check(21)" width="100px" height="100px" id="tre21">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location"onclick="check(22)" width="100px" height="100px" id="tre22">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location" onclick="check(23)"width="100px" height="100px" id="tre23">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location"onclick="check(24)" width="100px" height="100px" id="tre24">
-        </div>
-        <div class="col-2">
-            <img src="location.jpg" alt="Location" onclick="check(25)"width="100px" height="100px" id="tre25">
-        </div>
-    </div>
+                <div class="location">
+                    <img id="iid7" src="location.jpg" onclick="check(7)" alt="locimg" width="100px" height="100px">
+                </div>
 
-    <script>
-        let ids = ['iid0', 'iid1', 'iid2', 'iid3', 'iid4', 'iid5', 'iid6', 'iid7', 'iid8', 'iid9', 'iid10', 'iid11', 'iid12', 'iid13',
-            'iid14', 'iid15', 'iid16', 'iid17', 'iid18', 'iid19', 'iid20', 'iid21', 'iid22', 'iid23', 'iid24']
-        let checkCount = 0
-        let penalty = 0
-        let lastCheck = 0
-        let treasureLocation = 5
-        let trapLocation = 18
-        let gameOver = false
-        function check(position) {
-            if (!gameOver) {
-                console.log(position)
-                let selectedid = ids[position]
-                console.log(selectedid)
-                if (position == treasureLocation) {
-                    document.getElementById(selectedid).src = "treasure.jpg"
-                    gameOver = true
-                    penalty -= 3
+                <div class="location">
+                    <img id="iid8" src="location.jpg" onclick="check(8)" alt="locimg" width="100px" height="100px">
+                </div>
+
+                <div class="location">
+                    <img id="iid9" src="location.jpg" onclick="check(9)" alt="locimg" width="100px" height="100px">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="location">
+                    <img id="iid10" src="location.jpg" onclick="check(10)" alt="locimg" width="100px" height="100px">
+                </div>
+
+                <div class="location">
+                    <img id="iid11" src="location.jpg" onclick="check(11)" alt="locimg" width="100px" height="100px">
+                </div>
+
+                <div class="location">
+                    <img id="iid12" src="location.jpg" onclick="check(12)" alt="locimg" width="100px" height="100px">
+                </div>
+
+                <div class="location">
+                    <img id="iid13" src="location.jpg" onclick="check(13)" alt="locimg" width="100px" height="100px">
+                </div>
+
+                <div class="location">
+                    <img id="iid14" src="location.jpg" onclick="check(14)" alt="locimg" width="100px" height="100px">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="location">
+                    <img id="iid15" src="location.jpg" onclick="check(15)" alt="locimg" width="100px" height="100px">
+                </div>
+
+                <div class="location">
+                    <img id="iid16" src="location.jpg" onclick="check(16)" alt="locimg" width="100px" height="100px">
+                </div>
+
+                <div class="location">
+                    <img id="iid17" src="location.jpg" onclick="check(17)" alt="locimg" width="100px" height="100px">
+                </div>
+
+                <div class="location">
+                    <img id="iid18" src="location.jpg" onclick="check(18)" alt="locimg" width="100px" height="100px">
+                </div>
+
+                <div class="location">
+                    <img id="iid19" src="location.jpg" onclick="check(19)" alt="locimg" width="100px" height="100px">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="location">
+                    <img id="iid20" src="location.jpg" onclick="check(20)" alt="locimg" width="100px" height="100px">
+                </div>
+
+                <div class="location">
+                    <img id="iid21" src="location.jpg" onclick="check(21)" alt="locimg" width="100px" height="100px">
+                </div>
+
+                <div class="location">
+                    <img id="iid22" src="location.jpg" onclick="check(22)" alt="locimg" width="100px" height="100px">
+                </div>
+
+                <div class="location">
+                    <img id="iid23" src="location.jpg" onclick="check(23)" alt="locimg" width="100px" height="100px">
+                </div>
+
+                <div class="location">
+                    <img id="iid24" src="location.jpg" onclick="check(24)" alt="locimg" width="100px" height="100px">
+                </div>
+            </div>
+            <script>
+                let ids = ['iid0', 'iid1', 'iid2', 'iid3', 'iid4', 'iid5', 'iid6', 'iid7', 'iid8', 'iid9', 'iid10', 'iid11', 'iid12', 'iid13',
+                    'iid14', 'iid15', 'iid16', 'iid17', 'iid18', 'iid19', 'iid20', 'iid21', 'iid22', 'iid23', 'iid24']
+                let checkCount = 0
+                let penalty = 0
+                let lastCheck = 0
+                let treasureLocation = 5
+                let trapLocation = 18
+                let gameOver = false
+                function check(position) {
+                    if (!gameOver) {
+                        console.log(position)
+                        let selectedid = ids[position]
+                        console.log(selectedid)
+                        if (position == treasureLocation) {
+                            document.getElementById(selectedid).src = "treasure.jpg"
+                            gameOver = true
+                            penalty -= 3
+                        }
+                        else if (position == trapLocation) {
+                            document.getElementById(selectedid).src = "trap.jpg"
+                            gameOver = true
+                            penalty += 4
+                        }
+                        else {
+                            document.getElementById(selectedid).src = "pirate.jpg"
+                        }
+                        checkCount++
+                        penalty++
+
+                        lastCheck = position
+                        console.log("checkCount" + checkCount)
+                        console.log("penality" + penalty)
+                        document.getElementById("locations").innerHTML = "Number of locations checked is " + checkCount + "."
+                        document.getElementById("penalty").innerHTML = "Penalty is " + penalty + "."
+                    }
+                    if (gameOver) {
+                        return
+                    }
                 }
-                else if (position == trapLocation) {
-                    document.getElementById(selectedid).src = "trap.jpg"
-                    gameOver = true
-                    penalty += 4
+                function help() {
+                    final = " "
+                    if (gameOver)
+                        return final;
+                    let row = Math.floor(lastCheck / 5);
+                    let col = lastCheck % 5;
+                    let treasureRow = Math.floor(treasureLocation / 5);
+                    console.log("treasureRow" + treasureRow)
+                    let treasureCol = treasureLocation % 5;
+
+                    if (Math.abs(treasureRow - row) <= 1 && Math.abs(treasureCol - col) <= 1) {
+                        final = "Can smell it";
+                        console.log("result" + final)
+
+                    }
+                    if (Math.abs(treasureRow - row) + Math.abs(treasureCol - col) == 2) {
+                        final = "Close Matie"
+
+                    }
+                    if (!(Math.abs(treasureRow - row) <= 1 && Math.abs(treasureCol - col) <= 1) && !(Math.abs(treasureRow - row) + Math.abs(treasureCol - col) == 2)) {
+                        final = "Step Faster"
+
+                    }
+                    penalty += 2
+                    document.getElementById("help").innerHTML = final;
+                    document.getElementById("penalty").innerHTML = "Penalty is " + penalty + "."
+                    return final
                 }
-                else {
-                    document.getElementById(selectedid).src = "pirate.jpg"
-                }
-                checkCount++
-                penalty++
-
-                lastCheck = position
-                console.log("checkCount" + checkCount)
-                console.log("penality" + penalty)
-                document.getElementById("locations").innerHTML = "Number of locations checked is " + checkCount + "."
-                document.getElementById("penalty").innerHTML = "Penalty is " + penalty + "."
-            }
-            if (gameOver) {
-                return
-            }
-        }
-        function help() {
-            final = " "
-            if (gameOver)
-                return final;
-            let row = Math.floor(lastCheck / 5);
-            let col = lastCheck % 5;
-            let treasureRow = Math.floor(treasureLocation / 5);
-            console.log("treasureRow" + treasureRow)
-            let treasureCol = treasureLocation % 5;
-
-            if (Math.abs(treasureRow - row) <= 1 && Math.abs(treasureCol - col) <= 1) {
-                final = "Can smell it";
-                console.log("result" + final)
-
-            }
-            if (Math.abs(treasureRow - row) + Math.abs(treasureCol - col) == 2) {
-                final = "Close Matie"
-
-            }
-            if (!(Math.abs(treasureRow - row) <= 1 && Math.abs(treasureCol - col) <= 1) && !(Math.abs(treasureRow - row) + Math.abs(treasureCol - col) == 2)) {
-                final = "Step Faster"
-
-            }
-            penalty += 2
-            document.getElementById("help").innerHTML = final;
-            document.getElementById("penalty").innerHTML = "Penalty is " + penalty + "."
-            return final
-        }
-   </script>
-   </body>
-   </html>
+           </script>
+           </body>
+           </html>
